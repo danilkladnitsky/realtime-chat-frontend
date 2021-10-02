@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.logo {
+  color: rgb(10, 52, 101);
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 0px;
+  white-space: nowrap;
+}
+
+.navbar {
+  margin: 10px 0px;
+}
+
+.navbar li {
+  display: inline;
+  font-size: 0.9em;
+  padding-left: 30px;
+}
+
+
+/*Mobile*/
+@media (max-width: 992px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    font-size: 1.5em;
+  }
+
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar li {
+    display: block;
+    font-size: 1em;
+    padding: 5px 0px;
+  }
+}
